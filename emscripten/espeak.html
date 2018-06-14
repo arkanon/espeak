@@ -154,25 +154,25 @@ function speak(preach) {
   </head>
   <body class="loading">
     <div id="splash">
-      <div>Loading...</div>
+      <div>Carregando (péra que talvez demore um pouco...)</div>
       <progress></progress>
     </div>
     <h1>eSpeak.js Demo</h1>
     <form>
       <textarea id="texttospeak">Meo deos do céo, pra onde esse mundo vai?</textarea>
       <div class="speecharg">
-        <label for="pitch">Pitch</label><input id="pitch" type="range" value="50" min="0" max="100"><button type="button" aria-label="Reset pitch" title="Reset pitch" onclick="resetPitch();">&#x21b6;</button>
+        <label for="pitch">Altura</label><input id="pitch" type="range" value="50" min="0" max="100"><button type="button" aria-label="Reset pitch" title="Reset pitch" onclick="resetPitch();">&#x21b6;</button>
       </div>
       <div class="speecharg">
-        <label for="rate">Rate</label><input id="rate" type="range" value="95" min="80" max="450"><button type="button" aria-label="Reset rate" title="Reset rate" onclick="resetRate();">&#x21b6;</button>
+        <label for="rate">Velocidade</label><input id="rate" type="range" value="95" min="80" max="450"><button type="button" aria-label="Reset rate" title="Reset rate" onclick="resetRate();">&#x21b6;</button>
       </div>
       <div class="speecharg">
-        <label for="voice">Voice</label><select id="voice"></select><button type="button" aria-label="Reset voice" title="Reset voice" onclick="resetVoice();">&#x21b6;</button>
+        <label for="voice">Voz</label><select id="voice"></select><button type="button" aria-label="Reset voice" title="Reset voice" onclick="resetVoice();">&#x21b6;</button>
       </div>
       <div class="bottom">
-        <button type="button" onmousedown="speak();">Speak it</button>
-        <button type="button" id="preachit" onmousedown="speak(true);">Preach it</button>
-        <button type="button" onmousedown="stop();">Shut up</button>
+        <button type="button" onmousedown="speak();">Fala</button>
+        <button type="button" id="preachit" onmousedown="speak(true);">Reza</button>
+        <button type="button" onmousedown="stop();">Cala a boca!</button>
       </div>
       <a id="gh" href="https://github.com/eeejay/espeak/tree/emscripten">GitHub Branch</a>
     </form>
